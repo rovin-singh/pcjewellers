@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+      <div class="container">
+        <div class="popup" id="popup">
+            <div class="popup-inner">
+                <div class="popup-photo">
+                    <img src="https://www.pcjeweller.com/public/default/frontend/custom/images/login.jpg" alt="">
+                </div>
+                <div class="popup-text">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                           <form action="" id="loginForm">
+                               <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Email Address" id="loginEmail">
+                               </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Password" id="loginPass">
+                                </div>
+                               <div class="mb-3">
+                                <input type="submit" value="log me in" class="form-control">
+                               </div>   
+                           </form>
+                           <div class="text-center">
+                            <p class="btn">Forgot Password</p>
+                            <p>Or login with Email</p>
+                           </div>
+                           <div class="text-center">
+                                <button class="btn btn-danger">Log in with Google</button>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <form action="" id="signupform">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Name" id="name">
+                                   </div>
+                                <div class="mb-3">
+                                 <input type="email" class="form-control" placeholder="Email ID" id="email">
+                                </div>
+                                 <div class="mb-3">
+                                     <input type="text" class="form-control" placeholder="Password" id="pass">
+                                 </div>
+                                 <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Password" id="conPass">
+                                </div>
+                                <div class="mb-3">
+                                   <p><input type="radio" class="m-2">I agree to the Terms of use and Privacy Statement</p> 
+                                </div>
+                                <div class="mb-3">
+                                 <input type="submit" value="Signup Now" class="form-control btn-warning">
+                                </div>   
+                            </form>
+                        </div>
+                
+                      </div>
+                </div>
+                <div><a href="index.html" class="popup-close">X</a></div>
+            </div>
+        
+        
+        
+
+        </div>
+      
+      </div>
+
+    <!-- end footer data -->
+    <!-- do not remove these codes -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+<script>
+
+     document.querySelector("#signupform").addEventListener("submit",loginData);
+     var loginData=JSON.parse(localStorage.getItem("loginData"))||[];
+    
+    console.log(loginData);
+     function loginData(){
+        event.preventDefault();
+         var obj={
+             name:document.querySelector("#name").value,
+             email:document.querySelector("#email").value,
+             pass:document.querySelector("#pass").value,
+             conpass:document.querySelector("#conPass").value,
+         }
+         if(obj.pass==obj.conpass){
+            loginData.push(obj);
+            alert("signup successful");          
+         }
+         else{
+             alert("Password Mismatch");
+         }
+         localStorage.setItem("loginData",JSON.stringify(loginData));
+            document.querySelector("#name").value="";
+            document.querySelector("#email").value="";
+            document.querySelector("#pass").value="";
+            document.querySelector("#conPass").value="";
+     }
+
+    //login 
+    document.querySelector("#loginForm").addEventListener("submit",loginFunction);
+    var loginData=JSON.parse(localStorage.getItem("loginData"))||[];
+    function loginFunction(){
+        event.preventDefault();
+         var email=document.querySelector("#loginEmail").value;
+         var pass=document.querySelector("#loginPass").value;
+         console.log(email,pass);
+         console.log(loginData)
+         loginData.map(function(e){
+         if(e.email==email && e.pass==pass){
+           alert("logged In");
+           window.location.href = "index.html";
+         }
+         else{
+            alert("Invalid Data");
+         } 
+         });
+    }
+
+</script>

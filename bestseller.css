@@ -1,0 +1,48 @@
+#container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+#container>div{
+    width: 100%;
+    border: 1px solid whitesmoke;
+    text-align: center;
+}
+#container>div>img{
+    width: 100%;
+    background-color: whitesmoke;
+}
+#container>div>p{
+    color: #636465;
+}
+#container span{
+    margin: 8px;
+}
+#bestpricepara{
+    color: black !important;
+}
+.filter{
+    width: 50%;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter-option{
+    margin: auto;
+}
+/* media queries */
+
+@media all and (min-width: 480px) and (max-width:700px) {
+    #container {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media all and (min-width: 60px) and (max-width:480px) {
+    #container {
+        grid-template-columns: repeat(1,1fr);
+    }
+  }

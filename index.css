@@ -1,0 +1,49 @@
+.top-menu{
+    background: url("https://www.pcjeweller.com/public/uploads/exim/floral-pc.jpg") repeat center;
+}
+.gift-top{
+    padding: 0px 40px;
+    background-color: #0e7e82;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 20px;
+}
+.gift-top-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-nav{
+    background-color: white;
+    border: 2px solid #ff9800;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    font-weight: 500;
+}
+#navbarSupportedContent > ul > li.nav-item.digital-gold{
+    background-color: #ff9800;
+    border-radius: 10px;
+}
+.login-cart{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+  }
+.login-cart>div>img{
+    width: 155px;
+}
+.login-cart a{
+    text-decoration: none;
+    color: black;
+}
+#searchbar>input{
+    width: 500px;
+    padding: 5px;
+}
