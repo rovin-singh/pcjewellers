@@ -1,0 +1,76 @@
+#mainBox{
+    margin: 0px 120px 0px 120px;
+    font-family: sans-serif;
+}
+img{
+    width: 100%;
+    height: 250px;
+}
+select{
+    height: 35px;
+    width: 18%;
+    margin-left: 10px;
+}
+
+#container {
+text-align: center;
+display: grid;
+
+grid-template-columns: repeat(4, 1fr);
+gap: 40px;
+padding: 30px;
+justify-content: center;
+
+}
+#container > div{
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    justify-content: space-around; 
+}
+#container > div:hover{
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+cursor: pointer;
+}
+
+#bestpricepar{
+font-size: 19px;
+color: black;
+}
+span{
+font-size: 14px;
+color: rgb(194, 184, 184);
+}
+
+div > p{
+color: #666262;
+font-family: "avenir next lt pro", sans-serif;
+}
+p:nth-child(4) {
+    font-size: 10px;
+    color: coral;
+    font-weight: bold;
+} 
+p:nth-child(5) {
+font-size: 13px;
+} 
+
+select{
+    cursor: pointer;
+}
+#z{
+    font-size: 12px;
+    color: gray;
+    
+}
+
+        /* media queries */
+
+  @media all and (min-width: 480px) and (max-width:700px) {
+    #container {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media all and (min-width: 60px) and (max-width:480px) {
+    #container {
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
