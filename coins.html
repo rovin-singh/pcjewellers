@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <title>Coins</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="coins.css" />
+    
+</head>
+<body>
+<!-- start topbar  -->
+<div class="top-menu">
+    <div class="gift-top">
+        <div>
+            <p> 1800-120-1434</p>
+        </div>
+        <div class="gift-top-inner">
+            <p> Corporate Gifting</p>
+            <p>Gift Cards</p>
+            <p>Store Locator</p>
+            <p>Corporate</p>
+            <p>Investors</p>
+        </div>
+    </div>
+    <div class="login-cart">
+        <div>
+            <a href="index.html"><img
+                    src="https://cf-cdn.pcjeweller.com/public/uploads/settings/pcj-logo__592261435.png"
+                    alt="pcg"></a>
+        </div>
+        <div id="searchbar">
+            <input type="text" placeholder="Search..">
+        </div>
+        <div class="login-cart login-data">
+            <a href="register.html#popup">
+                <h6>Login</h6>
+            </a>
+            <a href="register.html#popup">
+                <h6>Register</h6>
+            </a>
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="nav-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="rings.html">RINGS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="earrings.html">EARRINGS</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="bestseller.html">BEST SELLER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alljewellery.html">ALL JEWELLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collections.html">COLLECTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shipped.html">READY TO SHIP</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="gold-chain.html">GOLD CHAINS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="silver.html">SILVER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="coins.html">COINS</a>
+                        </li>
+                        <li class="nav-item digital-gold">
+                            <a class="nav-link" href="gold-digital.html">DIGITAL GOLD</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- end topbar  -->
+
+    
+        <div>
+            <h2>VIEW ALL COINS </h2>
+        </div>
+        <div>
+            <p id="design">( 21 Designs )</p>
+        </div>
+        <div id="mainBox">
+    <div class = "filter">
+        <h3>FILTER BY</h3>
+        <div class="filter-option">
+            <select id= "filter-price" onclick="filterPrice()">
+                <option value="">PRICE</option>
+                <option value="accending">High To Low</option>
+                <option value="decending">Low To High</option>
+            </select>
+            <select id="filter-material" onclick="filterMat()">
+                <option value="">BY MATERIAL</option>
+                <option value="Diamond">DIAMOND</option>
+                <option value="Gold">GOLD</option>
+                </select>
+            <select id = "filter-category" onclick="flterCat()">
+            <option value="">BY CATEGORY</option>
+            </select>
+            
+            <select id= "filter-gender">
+                <option value="">BY GENDER</option>
+                <option value="">MEN</option>
+                <option value="">WOMEN</option>
+            </select>
+        </div>
+    </div>
+<!-- DATA -->
+<div id="container"></div>
+
+</div>
+</body>
+</html>
+<script>
+
+    
+var CoinsData = [
+{
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/1/10-GM-COIN-1__56196476.jpg",
+           name: "10 Gram 24K Floral Gold Coin",
+           price: 57062,
+           act_price: 59979,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },   
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/1/1-GM-COIN-2__2087486650.jpg",
+           name: "1 Gram 24K Floral Gold Coin",
+           price: 5912,
+           act_price: 6430,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },   
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/5/50-GM-COIN-1__1318894925.jpg",
+           name: "50 Gram 24K Floral Gold Coin",
+           price: 282735,
+           act_price: 288880,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },   
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/g/GCFL00500-2-24kt__1672541150.jpg",
+           name: "PC Jeweller 0.5 Gram 24KT Floral Gold Coin",
+           price: 2999,
+           act_price: 3333,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },
+        {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/l/laxmi-ganesha-coin-back__495844.jpg",
+           name: "1 Gram 24K Laxmi Ganesh Gold Coin",
+           price: 5912,
+           act_price: 6528,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/g/GCF200010-3__1184948385.jpg",
+           name: "The 10 Gram 22K Rose Gold Coin",
+           price: 53869,
+           act_price: 57029,
+           nature: "Metal 22KT Yellow Gold",
+           specification: "",
+       },
+
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/g/GCLG00004-2.jpg",
+           name: "4 Gram 24K Laxmi Ganesh Gold Coin",
+           price: 25825,
+           act_price: 25876,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },   
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/2/2-GM-COIN-1__1762225390__1983781393.jpg",
+           name: "8 Gram 24K Floral Gold Coin",
+           price: 45650,
+           act_price: 48329,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },   
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/g/GCL200010-3__42514596.jpg",
+           name: "The 10 Gram 22K Precious Gold Coin",
+           price: 53869,
+           act_price: 55857,
+           nature: "Metal 22KT Yellow Gold",
+           specification: "",
+       },  
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/g/GCL200005-2__822586751.jpg",
+           name: "The 5 Gram 22K Precious Gold Coin",
+           price: 26935,
+           act_price: 29844,
+           nature: "Metal 22KT Yellow Gold",
+           specification: "",
+       },
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/g/GCFL00008-1__881413345.jpg",
+           name: "8 Gram 24K Floral Gold Coin",
+           price: 45786,
+           act_price: 49745,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },
+       {
+           img_url:
+           "https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/preview/g/GCFL00008-1__881413345.jpg",
+           name: "8 Gram 24K Floral Gold Coin",
+           price: 45786,
+           act_price: 49745,
+           nature: "Metal 24KT Yellow Gold",
+           specification: "",
+       },
+        
+
+         
+    ];
+
+
+window.addEventListener("load", function (){
+displayData(CoinsData)
+});
+
+function filterPrice(){
+var selected = document.querySelector("#filter-price").value;
+ console.log(selected);
+ if(selected =="accending"){
+     CoinsData.sort(function (a, b){
+         return b.price - a.price;
+     });
+     displayData(CoinsData);
+    }
+     if(selected == "decending"){
+         CoinsData.sort(function (a, b){
+             return a.price - b.price;
+         });
+         displayData(CoinsData)
+     }
+ };
+
+function filterCat() {
+var selected = document.querySelector("#filter-category").value;
+
+var filterData = CoinsData.filter(function(e){
+    return e.name.includes(selected);
+})
+displayData(filterData);
+}
+
+function filterMat(){
+var selected = document.querySelector("#filter-material").value;
+console.log(selected);
+var filterData = CoinsData.filter(function(e){
+    return e.name.includes(selected)
+});
+displayData(filterData);
+}
+
+function displayData(CoinsData){
+document.querySelector("#container").innerText ="";
+CoinsData.map(function (e){
+    var div = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = e.img_url;
+
+    var p1 = document.createElement("p");
+    p1.innerText = e.name;
+
+    var p2 = document.createElement("p")
+    p2.setAttribute("id", "bestpricepar")
+    p2.innerText = "₹" + e.price +" "
+    var span = document.createElement("span");
+    var mark = document.createElement("del");
+    mark.innerText = "₹" + e.act_price;
+    span.append(mark);
+    p2.append(span);
+    
+    var p3 = document.createElement("p");
+    p3.innerText = "You Save ₹" + [e.act_price - e.price] + " [" + Math.round(100 - (e.price / e.act_price) *100) + "%" + " off]"
+
+    var p4 = document.createElement("p")
+    p4.innerText = e.nature;
+
+    var p5 = document.createElement("p");
+        p5.innerText = e.specification;
+
+    var btn=document.createElement("button");
+      btn.innerText="Add to Card";
+      btn.addEventListener("click", function () {
+           addToCart(e);
+          });
+      div.append(img, p1, p2, p3, p4, p5, btn);
+      document.querySelector("#container").append(div);
+    });
+  };
+ 
+
+  function addToCart(e){
+    var cartData=JSON.parse(localStorage.getItem("cartData"))||[];
+    console.log(cartData);
+    cartData.push(e);
+    localStorage.setItem("cartData",JSON.stringify(cartData));
+    alert("item added into the cart");
+  }
+</script>ss
