@@ -1,0 +1,269 @@
+.top-menu {
+    width: 100%;
+    background: url("https://www.pcjeweller.com/public/uploads/exim/floral-pc.jpg") repeat center;
+}
+
+.gift-top {
+    padding: 10px 10px 5px 40px;
+    background-color: #0e7e82;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
+}
+
+.gift-top-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-nav {
+    background-color: white;
+    border: 2px solid #ff9800;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+#navbarSupportedContent>ul>li.nav-item.digital-gold {
+    background-color: #ff9800;
+    border-radius: 10px;
+}
+
+.login-cart {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.login-cart>div>a>img {
+    width: 155px;
+}
+
+.login-cart a {
+    text-decoration: none;
+    color: black;
+}
+
+#searchbar>input {
+    width: 500px;
+    padding: 5px;
+}
+
+
+/* start main index page css */
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+#ab {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 40px;
+}
+
+
+#cd {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+}
+
+.view-btn button {
+    color: #9e7922;
+    padding: 5px 25px;
+    border: 1px solid #9e7922;
+
+}
+
+#ef {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+}
+
+#ef>div>img {
+    width: 100%;
+}
+
+#gh {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-gap: 5px;
+}
+
+#gh>div>:nth-child(1) {
+    width: 100%;
+    height: auto;
+}
+
+#gh>div>img {
+    width: 100%;
+}
+
+#ij {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+}
+
+#ij>div>img {
+    width: 50%;
+}
+
+#ij>div>div>img {
+    width: 100%
+}
+
+#ij>div {
+    display: flex;
+}
+
+#kl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 5px;
+    grid-template-areas:
+        "a a b c"
+        "a a d e";
+}
+
+#kl>div>img {
+    width: 100%;
+}
+
+#kl>div:nth-child(1) {
+    grid-area: a;
+}
+
+#kl>div:nth-child(2) {
+    grid-area: b;
+}
+
+#kl>div:nth-child(3) {
+    grid-area: c;
+}
+
+#kl>div:nth-child(4) {
+    grid-area: d;
+}
+
+#kl>div:nth-child(5) {
+    grid-area: e;
+}
+
+#mn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 5px;
+}
+
+#mn>div>img {
+    width: 100%;
+}
+
+.carousel-item {
+    border: 2px solid whitesmoke;
+    padding: 15px;
+}
+
+
+#qr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 50px);
+    grid-gap: 5px;
+}
+
+
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: avenir next lt pro, sans-serif;
+    margin-top: 40px;
+}
+
+#container>div>ul>b {
+    margin-top: 10px;
+}
+
+#container ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* end main index page css */
+
+
+/* Best Seller part */
+
+#container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+#container>div{
+    width: 100%;
+    border: 1px solid whitesmoke;
+    text-align: center;
+}
+#container>div>img{
+    width: 100%;
+    background-color: whitesmoke;
+}
+#container>div>p{
+    color: #636465;
+}
+#container span{
+    margin: 8px;
+}
+#bestpricepara{
+    color: black !important;
+}
+.filter{
+    width: 50%;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter-option{
+    margin: auto;
+}
+/* media queries */
+
+@media all and (min-width: 480px) and (max-width:700px) {
+    #container {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media all and (min-width: 60px) and (max-width:480px) {
+    #container {
+        grid-template-columns: repeat(1,1fr);
+    }
+  }

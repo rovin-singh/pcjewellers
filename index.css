@@ -1,10 +1,10 @@
 .top-menu {
-    width: 100% ;
+    width: 100%;
     background: url("https://www.pcjeweller.com/public/uploads/exim/floral-pc.jpg") repeat center;
 }
 
 .gift-top {
-    padding: 0px 40px;
+    padding: 10px 10px 5px 40px;
     background-color: #0e7e82;
     color: white;
     display: grid;
@@ -60,10 +60,11 @@
 
 
 /* start main index page css */
-.container{
+.container {
     margin: auto;
     text-align: center;
 }
+
 #ab {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -77,24 +78,27 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, auto);
-    gap:10px;
+    gap: 10px;
 }
 
-.view-btn button{
+.view-btn button {
     color: #9e7922;
     padding: 5px 25px;
-    border:1px solid #9e7922;
-   
+    border: 1px solid #9e7922;
+
 }
+
 #ef {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    grid-gap: 10px;  
+    grid-gap: 10px;
 }
-#ef>div>img{
+
+#ef>div>img {
     width: 100%;
 }
+
 #gh {
     margin-top: 20px;
     text-align: center;
@@ -103,27 +107,32 @@
     grid-template-rows: repeat(1, auto);
     grid-gap: 5px;
 }
-#gh>div>:nth-child(1){
+
+#gh>div>:nth-child(1) {
     width: 100%;
     height: auto;
 }
-#gh>div>img{
+
+#gh>div>img {
     width: 100%;
 }
-#ij{
+
+#ij {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-gap: 10px;
 }
-#ij>div>img{
-   width:50%;
+
+#ij>div>img {
+    width: 50%;
 }
 
-#ij>div>div>img{
-    width:100%
+#ij>div>div>img {
+    width: 100%
 }
-#ij>div{
+
+#ij>div {
     display: flex;
 }
 
@@ -132,30 +141,32 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-gap: 5px;
-    grid-template-areas: 
-    "a a b c"
-    "a a d e";
+    grid-template-areas:
+        "a a b c"
+        "a a d e";
 }
-#kl>div>img{
+
+#kl>div>img {
     width: 100%;
 }
-#kl>div:nth-child(1){
+
+#kl>div:nth-child(1) {
     grid-area: a;
 }
 
-#kl>div:nth-child(2){
+#kl>div:nth-child(2) {
     grid-area: b;
 }
 
-#kl>div:nth-child(3){
+#kl>div:nth-child(3) {
     grid-area: c;
 }
 
-#kl>div:nth-child(4){
+#kl>div:nth-child(4) {
     grid-area: d;
 }
 
-#kl>div:nth-child(5){
+#kl>div:nth-child(5) {
     grid-area: e;
 }
 
@@ -165,13 +176,14 @@
     grid-template-rows: repeat(2, auto);
     grid-gap: 5px;
 }
-#mn>div>img{
+
+#mn>div>img {
     width: 100%;
 }
 
-.carousel-item{
+.carousel-item {
     border: 2px solid whitesmoke;
-    padding: 15px  ;
+    padding: 15px;
 }
 
 
@@ -188,12 +200,14 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    font-family: avenir next lt pro,sans-serif;
+    font-family: avenir next lt pro, sans-serif;
     margin-top: 40px;
 }
-#container>div>ul>b{
+
+#container>div>ul>b {
     margin-top: 10px;
 }
+
 #container ul li {
     list-style: none;
     text-decoration: none;
