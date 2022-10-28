@@ -17,3 +17,8 @@ We added all the functional parts as real website given.
 
 ## Live Link : 
   - Netlify : "https://eloquent-arithmetic-c3b22a.netlify.app/index.html"
+
+## End Notes
+
+It was an collaborative project that We have built in 5 days after learning HTML, CSS, JavaScript. Implemented frontend and  tried to do as much functionality as we could do in just 5 days. Need to fix/ modify the site in some areas. Thank you for visiting my github 🤍.
+ 
